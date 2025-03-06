@@ -31,7 +31,6 @@
     <meta name="lightning" content="bordalix@coinos.io" />
     <!-- PWA -->
     <meta name="theme-color" content="#ffffff" />
-    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/img/assets/king-192.png" />
   </head>
 
@@ -83,14 +82,5 @@
     </section>
 
     <script src="js/chesstr.js"></script>
-
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-          .register('/sw.js', { scope: '/' })
-          .then((registration) => registration.update())
-          .catch((error) => console.error(`Registration failed with ${error}`))
-      }
-    </script>
   </body>
 </html>

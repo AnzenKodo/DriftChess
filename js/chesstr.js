@@ -13,7 +13,7 @@ let restoringMoves = true
 
 const previousEvents = []
 
-const relays = ['wss://nos.lol']
+const relays = ['wss://nos.lol', 'wss://nostr-relay.app', 'wss://relay.damus.io', 'wss://relay.nos.social']
 
 const subId = 'my-sub'
 let websockets = []
